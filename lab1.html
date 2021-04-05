@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mileage Issues</title>
+</head>
+<body>
+<h1>Mileage Issues</h1><hr><br>
+</body>
+<script type='text/javascript'>
+	var MPG=prompt('How many miles does your car get on the gallon?');
+	var gasprice=prompt('What is the current gas price per gallon?');
+	var distance=prompt('How far do you want to travel in miles?');
+	var gasprice25=+gasprice+(0.25);
+	var gasprice50=+gasprice+(0.50);
+	var cost=((distance/MPG)*gasprice).toFixed(2);
+	var cost25=((distance/MPG)*gasprice25).toFixed(2);
+	var cost50=((distance/MPG)*gasprice50).toFixed(2);
+	var distance325=((325/MPG)*gasprice).toFixed(2);
+	document.write('Your car gets '	+MPG+	' miles per gallon.<br><br>');
+	document.write('Gas currently costs $'	+gasprice+	'.<br><br>');
+	document.write('To travel '	+distance+	' mile(s), it will cost you $'	+cost+	'.<br><br>');
+	document.write('If you wanted to travel 325 miles with the current gas price, it will cost you $' +distance325+ '.<br><br>')
+	document.write('If the cost of gas increases 25 cents per gallon, it will cost you $'	+cost25+ ' to travel the same distance.<br><br>')
+	document.write('If the cost of gas increases 50 cents per gallon, it will cost you $' +cost50+ ' to travel the same distance.<br><br>')
+</script>
+</html>
+
+	
+	
+	
+	
+	
